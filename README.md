@@ -8,9 +8,9 @@ Plateforme de webradios adaptatives
 ### Architecture en couches
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Frontend      │    │    Backend      │    │   Base de       │
-│   (Vue.js)      │◄──►│   (Express)     │◄──►│   données       │
-│   Port: 5173    │    │   Port: 3000    │    │   (MySQL)       │
+│   Frontend      │    │    Backend      │    │      B.D.D      |
+│   (Vue.js)      │◄──►│   (Express)     │◄──►│     (MySql)     │
+│   Port: 5173    │    │   Port: 3000    │    │   Port : 3306   │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
                                    │
                        ┌─────────────────┐
