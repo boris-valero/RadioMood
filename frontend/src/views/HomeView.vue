@@ -21,7 +21,6 @@ const sadSong = ref(null)
 
 async function handleSubmit() {
   if (answer.value.trim().toLowerCase().includes('triste')) {
-    // Appelle l’API pour une chanson triste
     const res = await fetch('http://localhost:3000/api/sad-song')
     if (res.ok) {
       sadSong.value = await res.json()
