@@ -36,7 +36,8 @@ services:
       - "${MYSQL_PORT}:3306"
     volumes:
       - db_data:/var/lib/mysql
-
+      - ./conception/bdd_corrigée.sql:/docker-entrypoint-initdb.d/init.sql
+      
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
     restart: always
