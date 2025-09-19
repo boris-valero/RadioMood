@@ -39,7 +39,7 @@ app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Backend Express démarré sur le port ${PORT}`);
 });
 
-app.get('/sad-song', async (req, res) => {
+app.get('/api/sad-song', async (req, res) => {
   try {
     const [moodRows] = await db.query("SELECT id_MOOD FROM MOOD WHERE name_MOOD = 'triste' LIMIT 1");
     if (!moodRows.length) {
